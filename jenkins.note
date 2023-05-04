@@ -1,3 +1,5 @@
+install
+========
 * "java -version": 8 or 11.
 * brew install jenkins-lts
 * brew services start jenkins-lts
