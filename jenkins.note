@@ -3,6 +3,7 @@
 * brew services start jenkins-lts
 * Install suggested plugins, plus Blue Ocean, Git Pipeline for Blue Ocean.
 * localhost:8080/blue (admin/admin)
+* example: https://github.com/DataKnox/NetDevKnox
 
 * brew services restart jenkins-lts
 * brew upgrade jenkins-lts
