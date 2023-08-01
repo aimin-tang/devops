@@ -1,0 +1,11 @@
+gcloud container clusters create mycluster --num-nodes=3
+gcloud container clusters get-credentials mycluster
+kubectl create deployment hello-server \
+    --image=us-docker.pkg.dev/google-samples/containers/gke/hello-app:1.0
+
+gcloud container node-pools list --cluster mycluster
+gcloud container clusters resize mycluster --node-pool default-pool --num-nodes 2
+
+kubectl get nodes
+kubectl get pods
+kubectl get service
